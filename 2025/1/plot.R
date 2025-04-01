@@ -15,7 +15,7 @@ strawberry <- data.frame(
 # weak #FC9FB1
 
 p <- ggplot(strawberry, aes(x = Rs, y = y, fill = chatgpt)) +
-  geom_tile(color = "white", linejoin = "bevel", linewidth = 4) +
+  geom_tile(color = "white", linejoin = "bevel", linewidth = 6) +
   coord_equal() +
   scale_x_discrete(
     breaks = c("1", "2", "3")
@@ -26,7 +26,7 @@ p <- ggplot(strawberry, aes(x = Rs, y = y, fill = chatgpt)) +
   ) +
   labs(
     title = "How many R letters are in the word \"strawberry?\"",
-    caption = "By Tiago Cabaço (github.com/tau31)"
+    caption = "Source: techcrunch.com/2024/08/27/why-ai-cant-spell-strawberry/<br>Tiago Cabaço (github.com/tau31)"
   ) +
   theme_minimal() +
   theme(
@@ -43,7 +43,7 @@ p <- ggplot(strawberry, aes(x = Rs, y = y, fill = chatgpt)) +
     axis.title = element_blank(),
     text = element_text(family = "Lato"),
     plot.title = element_markdown(size = 35, face = "bold", hjust = .5),
-    plot.caption = element_markdown(face = "italic", size = 20)
+    plot.caption = element_markdown(face = "italic", size = 14)
   )
 
 
